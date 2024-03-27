@@ -31,5 +31,14 @@ p {
 
 .menu {
   display: flex;
+  justify-content: center;
   gap:20px;
+}
+
+.menu a {
+  color: black;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-transform: uppercase;
 }
