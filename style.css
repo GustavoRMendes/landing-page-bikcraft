@@ -9,7 +9,7 @@ body {
 }
 
 .bike {
-  max-width: 300px;
+  max-width: 100%;
   display: block;
 }
 
@@ -45,5 +45,59 @@ p {
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center;
+  max-width: 1000px;
+}
+.introducao {
+  background-color: white;
+  display: grid;
+  text-align: right;
+  justify-items: end;
+  align-content: center;
+  gap: 20px;
+  padding: 40px;
+  position: relative;
+}
+.detalhe {
+  height: 4px;
+  width: 60px;
+  background-color: crimson;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+.botao {
+  background-color: crimson;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+}
+
+.subtitulo {
+  font-size: 64px;
+  text-transform: uppercase;
+  color: #c6c6c6;
+  text-align: right;
+  align-self: center;
+  padding: 40px;
+}
+.vantagens {
+  background-color: white;
+  padding: 40px;
+}
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 20px;
+  gap: 10px 20px;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.rodape {
+  background-color: #e7e7e7;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
