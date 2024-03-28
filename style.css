@@ -49,7 +49,9 @@ li {
   border-radius: 0.25rem;
   text-transform: uppercase;
 }
-
+.menu a:hover {
+  outline: 2px solid crimson;
+}
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -79,8 +81,11 @@ li {
   padding: 0.625rem 1.25rem;
   border-radius: 0.125rem;
   text-transform: uppercase;
+  transition: .3s;
 }
-
+.botao:hover {
+  background-color: rgb(121, 10, 33);
+}
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
