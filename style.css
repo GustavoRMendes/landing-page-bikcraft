@@ -88,6 +88,7 @@ li {
   text-align: right;
   align-self: center;
   padding: 2.5rem;
+  background:url('./img/onda.svg');
 }
 .vantagens {
   background-color: white;
