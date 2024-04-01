@@ -100,6 +100,7 @@ ul {
   align-self: center;
   padding: 2.5rem;
   background:url('./img/onda.svg');
+  word-break: break-all;
 }
 .vantagens {
   background-color: white;
