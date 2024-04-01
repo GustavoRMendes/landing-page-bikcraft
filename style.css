@@ -130,3 +130,7 @@ border-left: 0.25rem solid crimson;
   text-align: center;
 }
 
+.introducao-cover img{
+  object-fit: cover;
+  height: 100%;
+}
