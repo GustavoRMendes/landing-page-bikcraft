@@ -145,7 +145,7 @@ border-left: 0.25rem solid crimson;
   }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   body {
     gap: 30px;
     margin-top: 20px;
@@ -165,5 +165,13 @@ border-left: 0.25rem solid crimson;
   }
   .subtitulo {
     font-size: 3rem;
+  }
+}
+@media (max-width: 400px) {
+  p {
+    font-size: 1rem;
+  }
+  .subtitulo {
+    font-size: 2rem;
   }
 }
