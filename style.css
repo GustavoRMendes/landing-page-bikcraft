@@ -59,7 +59,7 @@ ul {
 }
 .conteudo {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   max-width: 62.5rem;
 }
 .introducao {
@@ -129,3 +129,4 @@ border-left: 0.25rem solid crimson;
   box-sizing: border-box;
   text-align: center;
 }
+
