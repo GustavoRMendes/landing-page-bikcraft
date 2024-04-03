@@ -1,11 +1,22 @@
+:root {
+  --font-primaria: Arial, Helvetica, sans-serif;
+  --fundo-1: #ffffff;
+  --fundo-2: #f7f7f7;
+  --fundo-3:#e7e7e7;
+  --cor-primaria: crimson;
+  --cor-texto: #000000;
+  --cor-subtitulo: #c6c6c6;
+}
+
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primaria);
   display: grid;
   justify-items: center;
   margin: 0;
   gap: 3.75rem;
   margin-top: 3.75rem;
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 h1 {
   font-size: 2rem;
@@ -45,8 +56,8 @@ ul {
   padding: 0;
 }
 .menu a {
-  color: black;
-  background-color: #e7e7e7;
+  color: var(--cor-texto);
+  background-color: var(--fundo-3);
   padding: 0.625rem 1.25rem;
   border-radius: 0.25rem;
   text-transform: uppercase;
@@ -55,7 +66,7 @@ ul {
 
 }
 .menu a:hover {
-  border: 2px solid crimson;
+  border: 2px solid var(--cor-primaria);
 }
 .conteudo {
   display: grid;
@@ -63,7 +74,7 @@ ul {
   max-width: 62.5rem;
 }
 .introducao {
-  background-color: white;
+  background-color: var(--fundo-1) ;
   display: grid;
   text-align: right;
   justify-items: end;
@@ -75,27 +86,24 @@ ul {
 .introducao::before {
   height: 0.25rem;
   width: 3.75rem;
-  background-color: crimson;
+  background-color: var(--cor-primaria);
   position: absolute;
   top: 1.875rem;
   right: -1.875rem;
   content: '';
 }
 .botao {
-  background-color: crimson;
-  color: white;
+  background-color: var(--cor-primaria);
+  color: var(--fundo-2);
   padding: 0.625rem 1.25rem;
   border-radius: 0.125rem;
   text-transform: uppercase;
   transition: .3s;
 }
-.botao:hover {
-  background-color: rgb(121, 10, 33);
-}
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
-  color: #c6c6c6;
+  color: var(--cor-subtitulo);
   text-align: right;
   align-self: center;
   padding: 2.5rem;
@@ -103,7 +111,7 @@ ul {
   word-break: break-all;
 }
 .vantagens {
-  background-color: white;
+  background-color: var(--fundo-1);
   padding: 2.5rem;
 }
 .vantagens-item {
@@ -114,17 +122,17 @@ ul {
   border: 0.25rem solid transparent;
 }
 .vantagens-item:nth-child(odd){
-  background-color: #e8e8e8;
+  background-color: var(--fundo-3);
 }
 .vantagens-item:hover{
-border-left: 0.25rem solid crimson; 
+border-left: 0.25rem solid var(--cor-primaria); 
 }
 .vantagens-item p {
   grid-column: 2;
 }
 
 .rodape {
-  background-color: #e7e7e7;
+  background-color: var(--fundo-3);
   width: 100%;
   padding: 1.25rem;
   box-sizing: border-box;
